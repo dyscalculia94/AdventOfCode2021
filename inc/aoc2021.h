@@ -6,10 +6,12 @@
 #include <functional>
 
 #include "day01.h"
+#include "day02.h"
 
 std::map<int, std::function<std::pair<int, int>(std::string)>> days
 {
-	{1, day01}
+	{1, day01},
+	{2, day02}
 };
 
 
