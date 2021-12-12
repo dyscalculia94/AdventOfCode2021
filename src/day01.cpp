@@ -2,8 +2,6 @@
 
 #include <vector>
 #include <fstream>
-#include <utility>
-#include <algorithm>
 
 using Input = std::vector<int>;
 
