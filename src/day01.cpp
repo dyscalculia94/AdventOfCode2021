@@ -20,9 +20,9 @@ namespace
 		return res;
 	}
 
-    int task1(Input input)
+    long long task1(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
         for (int i = 1; i < input.size(); i++) {
             if (input[i] > input[i - 1]) {
@@ -33,9 +33,9 @@ namespace
         return result;
     }
 
-    int task2(Input input)
+    long long task2(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
         int first = input[0] + input[1] + input[2];
         int second = input[1] + input[2] + input[3];
@@ -57,12 +57,12 @@ namespace
     }
 }
 
-std::pair<int, int> day01(std::string filedir)
+std::pair<long long, long long> day01(std::string filedir)
 {
     Input input = read_input(filedir + "/day01.txt");
 
-    int first = task1(input);
-    int second = task2(input);
+    long long first = task1(input);
+    long long second = task2(input);
 
     return {first, second};
 }

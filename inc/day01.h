@@ -4,6 +4,6 @@
 #include <string>
 #include <utility>
 
-std::pair<int, int> day01(std::string filedir);
+std::pair<long long, long long> day01(std::string filedir);
 
 #endif

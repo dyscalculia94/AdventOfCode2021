@@ -98,9 +98,9 @@ namespace
 		return res;
 	}
 
-    int task1(Input input)
+    long long task1(Input input)
     {
-        int result = -1;
+        long long result = -1;
 
         std::vector<int> drawn_numbers = input.first;
 		std::vector<std::array<std::array<int, 5>, 5>> boards = input.second;
@@ -116,9 +116,9 @@ namespace
         return result;
     }
 
-    int task2(Input input)
+    long long task2(Input input)
     {
-        int result = -1;
+        long long result = -1;
 
         std::vector<int> drawn_numbers = input.first;
 		std::vector<std::array<std::array<int, 5>, 5>> boards = input.second;
@@ -145,12 +145,12 @@ namespace
     }
 }
 
-std::pair<int, int> day04(std::string filedir)
+std::pair<long long, long long> day04(std::string filedir)
 {
     Input input = read_input(filedir + "/day04.txt");
 
-    int first = task1(input);
-    int second = task2(input);
+    long long first = task1(input);
+    long long second = task2(input);
 
     return {first, second};
 }

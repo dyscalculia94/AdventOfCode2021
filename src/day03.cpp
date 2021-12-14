@@ -80,9 +80,9 @@ namespace
 		return res;
 	}
 
-    int task1(Input input)
+    long long task1(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
 		std::string gamma = get_gamma(input);
 		std::string epsilon = get_epsilon(gamma);
@@ -92,9 +92,9 @@ namespace
         return result;
     }
 
-    int task2(Input input)
+    long long task2(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
 		std::sort(input.begin(), input.end());
 
@@ -107,12 +107,12 @@ namespace
     }
 }
 
-std::pair<int, int> day03(std::string filedir)
+std::pair<long long, long long> day03(std::string filedir)
 {
     Input input = read_input(filedir + "/day03.txt");
 
-    int first = task1(input);
-    int second = task2(input);
+    long long first = task1(input);
+    long long second = task2(input);
 
     return {first, second};
 }

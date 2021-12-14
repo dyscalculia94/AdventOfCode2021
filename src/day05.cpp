@@ -24,9 +24,9 @@ namespace
 		return res;
 	}
 
-    int task1(Input input)
+    long long task1(Input input)
     {
-        int result = 0;
+        long long result = 0;
 		std::array<std::array<int, 1000>, 1000> map = {{0}};
 		
 		for (auto i : input) {
@@ -54,9 +54,9 @@ namespace
         return result;
     }
 
-    int task2(Input input)
+    long long task2(Input input)
     {
-        int result = 0;
+        long long result = 0;
 		std::array<std::array<int, 1000>, 1000> map = {{0}};
 
 		for (auto i : input) {
@@ -83,12 +83,12 @@ namespace
     }
 }
 
-std::pair<int, int> day05(std::string filedir)
+std::pair<long long, long long> day05(std::string filedir)
 {
     Input input = read_input(filedir + "/day05.txt");
 
-    int first = task1(input);
-    int second = task2(input);
+    long long first = task1(input);
+    long long second = task2(input);
 
     return {first, second};
 }

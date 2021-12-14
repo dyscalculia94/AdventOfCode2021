@@ -39,9 +39,9 @@ namespace
 		return res;
 	}
 
-    int task1(Input input)
+    long long task1(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
 		int horizontal = 0;
 		int vertical = 0;
@@ -58,9 +58,9 @@ namespace
         return result;
     }
 
-    int task2(Input input)
+    long long task2(Input input)
     {
-        int result = 0;
+        long long result = 0;
 
 		int aim = 0;
 		int horizontal = 0;
@@ -80,12 +80,12 @@ namespace
     }
 }
 
-std::pair<int, int> day02(std::string filedir)
+std::pair<long long, long long> day02(std::string filedir)
 {
     Input input = read_input(filedir + "/day02.txt");
 
-    int first = task1(input);
-    int second = task2(input);
+    long long first = task1(input);
+    long long second = task2(input);
 
     return {first, second};
 }
