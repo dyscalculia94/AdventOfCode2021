@@ -17,6 +17,7 @@
 #include "day10.h"
 #include "day11.h"
 #include "day12.h"
+#include "day13.h"
 
 std::map<int, std::function<std::pair<long long, long long>(std::string)>> days
 {
@@ -31,7 +32,8 @@ std::map<int, std::function<std::pair<long long, long long>(std::string)>> days
 	{9, day09},
 	{10, day10},
 	{11, day11},
-	{12, day12}
+	{12, day12},
+	{13, day13}
 };
 
 
