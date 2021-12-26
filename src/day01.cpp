@@ -37,6 +37,8 @@ namespace
     {
         long long result = 0;
 
+        size_t size = input.size();
+
         int first = input[0] + input[1] + input[2];
         int second = input[1] + input[2] + input[3];
 
